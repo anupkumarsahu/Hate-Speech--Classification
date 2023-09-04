@@ -21,7 +21,8 @@ class PredictionPipeline:
         self.model_path = os.path.join("artifacts", "PredictModel")
         self.gcloud = GCloudSync()
         self.data_transformation = DataTransformation(
-            data_transformation_config=DataTransformationConfig, data_ingestion_artifacts=DataIngestionArtifacts)
+            data_transformation_config = DataTransformationConfig,
+            data_ingestion_artifacts = DataIngestionArtifacts)
 
     def get_model_from_gcloud(self) -> str:
         """
